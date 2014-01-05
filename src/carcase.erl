@@ -57,8 +57,6 @@ decode(Text, Table) ->
 %%%===================================================================
 
 get_alphabet(default) ->
-    lists:seq($A, $Y);
-get_alphabet(ext) ->
     lists:flatten(
       [lists:seq($A, $Z),
        $Å, $Ä, $Ö, $\s,
